@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.poppins-font{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+ 
+}
+/* common styles */
+
+.container{
+    width:75%;
+    max-width:1440px;
+    margin:0 auto;
+ 
+}
+.btn{
+padding:10px 30px 10px 24px;
+color:#FFFFFF;
+font-weight: 700;
+background-color: #E02C6D;
+border:none;
+border-radius:20px;
+display: flex;
+
+
+justify-content: space-between;
+align-items:center;
+}
+.btn i{
+    margin-left:10px;
+}
+.display-flex{
+    display:flex;
+}
+
+/* color */
+.color1{
+    color:#3A3A3A;
+}
+.color2{
+    color:#18191F;
+}
+
+.color4{
+    color:#0A0826;
+}
+.color5{
+    color:#6C6C6C;
+}
+.color6{
+    color:#FFFFFF;
+}
+
+/* nav related styles */
+.navbar,.banner,.feature{
+    justify-content: space-between;
+    align-items:center;
+  
+}
+.navbar{
+      margin-top: 80px;
+    margin-bottom:40px;
+}
+.brand{
+    font-size:30px;
+    font-weight:800;
+}
+.nav-item{
+    list-style:none;
+}
+.nav-link{
+    font-size:30px;
+    margin-right:24px;
+    text-decoration:none;
+
+}
+#jan{
+    margin-right: 20px;
+}
+
+.banner-content{
+   
+    width:582px;
+
+}
+.banner-title{
+    font-weight: 700;
+    line-height:70px;
+    font-size:50px;
+    margin-bottom:16px;
+}
+.banner-description{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.banner-img img{
+    width:440px;
+    background:url('/images/Circle\ design.svg');
+    margin-bottom: 100px;
+}
+.sponsor-company img{
+    filter:grayscale(100%);
+}
+.sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border:1px solid rgba(0, 0, 0, 0.2);
+    padding:36px 62px;
+    align-items:center;
+}
+
+/* Our collection styles */
+.popular-collection{
+    margin-bottom:100px;
+}
+.card{
+    width:100%;
+    padding:17px 15px;
+    box-shadow:0 4px 4px 0 #00000025;
+}.card img{
+    width:100%;
+    border-radius:5px;
+    margin-bottom:16px;
+}
+.card-title {
+    line-height:40px;
+    font-size:28px;
+    margin-bottom: 6px;
+    font-weight: 700;
+     
+     color:#3A3A3A;
+}
+.card-price{
+    color:#00000087;
+    font-size:24px;
+    margin-bottom: 20px;
+}
+.card-descritpiton{
+    color:#787885;
+    /* letter-spacing: 1.8%;
+    line-height: 143%; */
+    width:200px;
+}
+.collection-card-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:24px;
+} 
+.popular-title{
+    text-align:center;
+  margin-bottom:50px;
+  color:#3A3A3A;
+  font-weight: 600;
+  line-height:70px;
+}
+.see{
+    position:relative;
+}
+.seeMore{
+    margin-top:50px;
+    color:#E02C6D87;
+    position:absolute;
+    top:0;
+    right:50px;
+}
+
+/* feature product styles */
+.feature{
+gap:96px;
+margin-bottom:100px;
+}
+.feature-content{
+    width:610px;
+
+}
+.feature-title{
+    font-weight: 700;
+    line-height: 60px;
+    font-size:37px;
+    margin-bottom: 16px;
+}
+.feature-description{
+    line-height:28px;
+    font-weight:700;
+    font-size:16px;
+    margin-bottom: 16px;
+}
+.feature-img img{
+    width:404px;
+}
+footer{
+    background-color:#0A0826;
+    width:100%;
+    height:300px;
+}
+.footer-container{
+    color:white;
+    text-align:center;
+   padding-top:70px;
+ 
+}
+.footer-title{
+    color:#ffffff;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom: 10px;
+}
+.footer-description{
+    color:#D9DBE1;
+    font-size:14px;
+    font-weight:700;
+    line-height:24px;
+    margin-bottom: 14px;
+}
+.footer-links i{
+   margin-right:16px;
+}
+
+/* special property */
+.hide{
+    display:none !important;
+}
+
+/* Mobile design responsive */
+@media screen and (max-width:576px){
+
+.navbar, .banner,.feature{
+    flex-direction: column;
+
+}
+.navbar{
+    text-align:center;
+}
+.brand{
+    font-size:24px;
+    margin-bottom:20px;
+}
+.menu,#jan{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align:center;
+    margin-left:30px;
+}
+.nav-link{
+    margin-bottom:20px;
+    font-size:17px;
+   
+}
+.banner-content{
+    max-width:100%;
+    text-align:center;
+}
+.banner-title{
+    font-size:28px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+.banner-description{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.btn{
+ margin:auto;
+ margin-bottom:50px;
+}
+.banner-content{
+    order:2;
+}
+.banner-img{
+    order:1;
+}
+.banner-img img{
+    width:100%;
+    margin-bottom:40px;
+}
+.sponsor-company{
+    width:100%;
+  border:none;
+  grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    padding:0;
+    
+}
+.sponsor-company img{
+  filter:none;
+}
+.popular-title{
+    line-height:40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.card-descritpiton{
+    text-align:left;
+}
+.collection-card-container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    text-align:center;
+
+}.card{
+    width:100%;
+}
+.card img{
+    width:100%;
+   
+}
+.feature-img img{
+    width:100%;
+}
+.feature{
+    margin-bottom: 40px;
+    gap:47px;
+}
+.feature-content{
+    width:100%;
+}
+.feature-title{
+    line-height:45px;
+    font-size:28px;
+    text-align:center;
+}
+.feature-description{
+    text-align:center;
+}
+.btn{
+    border-radius:0;
+}
+}
+
+
+/* responsive for tablet device */
+@media screen and (min-width:577px) and (max-width:992px){
+
+    .navbar,.banner{
+        flex-direction: column;
+
+    }
+.brand {
+    margin-bottom: 30px;
+}
+.display-flex{
+    flex-wrap:wrap;
+}
+.nav-item{
+    margin-right:20px;
+    margin-bottom: 20px;
+}
+.banner-content{
+    width:100%;
+}
+.banner-title{
+    line-height:60px;
+    font-size:43px;
+    text-align:center;
+}
+.banner-description{
+    text-align:center;
+}
+.btn{
+    text-align:center;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.banner-img img{
+    width:100%;
+    order:1;
+}
+.banner-content{
+    order:2;
+}
+.sponsor-company{
+    padding:20px;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.sponsor-company img{
+    filter:grayscale(0);
+    padding:30px;
+    width:100%;
+}
+.feature-img{
+    width:100%;
+}
+.feature{
+    flex-direction: column;
+    gap:0;
+}
+.feature-img img{
+    width:100%;
+   margin-top:100px;
+   
+}
+.feature-content{
+    width:100%;
+}
+.feature-title{
+    margin-top:30px;
+}
+.feature-content{
+    margin-bottom:10px;
+}
+.popular-title{
+    font-size:30px; 
+    margin-top:30px;                  
+}
+.collection-card-container{
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+}             
+                
+                              
+                                                                                               
